@@ -3,18 +3,22 @@ ce repository est dédié à l'atelier #Maptime #Alpes du 07/07/2015 sur le suje
 
 
 ## Données
-Les données du tour c'est à dire le parcours provient des utilisateurs de [MapMyTracks](https://www.mapmytracks.com/) et en particulier de l'évenement [Tour de Force 2015](https://www.mapmytracks.com/events/tour-de-force-2015) et [Tour de Frane 2015](https://www.mapmytracks.com/events/tour-de-france-2015).
+Les données du tour c'est à dire le parcours provient des utilisateurs de [MapMyTracks](https://www.mapmytracks.com/) et en particulier des évenements [Tour de Force 2015](https://www.mapmytracks.com/events/tour-de-force-2015) et [Tour de Frane 2015](https://www.mapmytracks.com/events/tour-de-france-2015).
+
+Les données sont donc disponibles aux formats GPX et geoJSON dans data.
+Vous trouverez un fichier par étape et un fichier global. Attention, les données temporelle sont présentes, les fichiers sont donc voluminineux.
 
 ## Visualisations
-Vous pouvez cloner ce repository et réaliser des visualisations avant l'atelier
+Vous pouvez cloner ce repository et réaliser des visualisations avant l'atelier. Ainsi, un répertoire visu est prêt à accueillir vos pull requests et partager aisni vos créations.
 
 ## Trucs
-Pour la conversion des données de GPX vers GEOJSON, le module toGeoJSON disponible sous node est utile:
+### Données
+Pour la conversion des données de GPX vers GEOJSON, le module toGeoJSON disponible pour node s'installe ainsi:
 ~~~
 npm install togeojson
 ~~~
 
-puis 
+puis s'utilise par exemple comme cela:
 
 ~~~
 ./node_modules/.bin/togeojson MapMyTrack-Route-Tour-de-Force-2015Stage-01UtrechtPrologue.gpx > 01UtrechtPrologue.geojson
