@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <title>MapTime-Alpes - Tour de France 2015 GPX and Elevation</title>
+</head>
+
+<body>
+  <div id="leaflet-map"></div>
+  <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+  <script src="https://rawgithub.com/mpetazzoni/leaflet-gpx/master/gpx.js"></script>
+  <script type="text/javascript">
+    var map = L.map('leaflet-map');
+    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: 'Map data &copy; <a href="http://www.osm.org">OpenStreetMap</a>'
+        }).addTo(map);
+
+
+    var url = 'https://raw.githubusercontent.com/MaptimeAlpes/tour-de-france-2015/master/data/gpx/MapMyTrack-Route-Tour-de-Force-2015Stage-01UtrechtPrologue.gpx';
+    new L.GPX(url, {
+      async: true,
+      marker_options: {
+        startIconUrl: 'http://github.com/mpetazzoni/leaflet-gpx/raw/master/pin-icon-start.png',
+        endIconUrl: 'http://github.com/mpetazzoni/leaflet-gpx/raw/master/pin-icon-end.png',
+        shadowUrl: 'http://github.com/mpetazzoni/leaflet-gpx/raw/master/pin-shadow.png',
+      },
+    }).on('loaded', function(e) {
+      var gpx = e.target;
+      map.fitBounds(gpx.getBounds());
+    }).addTo(map);
+  </script>
+
+
+
+
+</body>
+
+</html>
