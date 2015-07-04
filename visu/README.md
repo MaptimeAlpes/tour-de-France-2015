@@ -1,8 +1,5 @@
 #Visualisations du Tour de France
 
-Les visualisations ci-dessous vous ont été fournies par:
--
--
--
-
-Nous attendons la votre !
+Les visualisations de cet atelier sont :
+- [GPX et Elevation](./gpx-and-elevation/) : un simple exemple leaflet basÃ© sur les plugins GPX et Elevation :)
+- Nous attendons la votre !
