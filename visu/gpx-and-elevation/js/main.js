@@ -1,6 +1,9 @@
 var map = L.map('leaflet-map');
-L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: 'Map data &copy; <a href="http://www.osm.org">OpenStreetMap</a>'
+// L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//   attribution: 'Map data &copy; <a href="http://www.osm.org">OpenStreetMap</a>'
+// }).addTo(map);
+L.tileLayer('http://server.opentopomap.org/{z}/{x}/{y}.png', {
+  attribution: 'map data: &copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 }).addTo(map);
 
 var el = L.control.elevation({
