@@ -1,15 +1,15 @@
 #Tour de France 2015
-ce repository est dédié à l'atelier #Maptime #Alpes du 07/07/2015 sur le sujet du tour de France 2015.
+Ce repository est dédié à l'atelier #Maptime #Alpes du 07/07/2015 sur le sujet du tour de France 2015.
 
 
 ## Données
-Les données du tour c'est à dire le parcours provient des utilisateurs de [MapMyTracks](https://www.mapmytracks.com/) et en particulier des évenements [Tour de Force 2015](https://www.mapmytracks.com/events/tour-de-force-2015) et [Tour de Frane 2015](https://www.mapmytracks.com/events/tour-de-france-2015).
+Les données du tour c'est à dire le parcours provient des utilisateurs de [MapMyTracks](https://www.mapmytracks.com/) et en particulier des événements [Tour de Force 2015](https://www.mapmytracks.com/events/tour-de-force-2015) et [Tour de France 2015](https://www.mapmytracks.com/events/tour-de-france-2015).
 
 Les données sont donc disponibles aux formats GPX et geoJSON dans data.
-Vous trouverez un fichier par étape et un fichier global. Attention, les données temporelle sont présentes, les fichiers sont donc voluminineux.
+Vous trouverez un fichier par étape et un fichier global. Attention, les données temporelles sont présentes, les fichiers sont donc volumineux.
 
 ## Visualisations
-Vous pouvez cloner ce repository et réaliser des visualisations avant l'atelier. Ainsi, un répertoire visu est prêt à accueillir vos pull requests et partager aisni vos créations.
+Vous pouvez cloner ce repository et réaliser des visualisations avant l'atelier. Ainsi, un répertoire visu est prêt à accueillir vos pull requests et partager ainsi vos créations.
 
 ## Licensing
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
