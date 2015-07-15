@@ -9,7 +9,7 @@ Les données sont donc disponibles aux formats GPX et geoJSON dans data.
 Vous trouverez un fichier par étape et un fichier global. Attention, les données temporelles sont présentes, les fichiers sont donc volumineux.
 
 ## Visualisations
-Vous pouvez cloner ce repository et réaliser des visualisations avant l'atelier. Ainsi, un répertoire visu est prêt à accueillir vos pull requests et partager ainsi vos créations.
+Vous pouvez cloner ce repository et réaliser des visualisations avant l'atelier. Ainsi, un répertoire [visu](./visu) est prêt à accueillir vos pull requests et partager ainsi vos créations. [Suivez ce lien](./visu)
 
 ## Licensing
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
